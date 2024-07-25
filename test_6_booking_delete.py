@@ -23,4 +23,4 @@ def test_delete_booking_by_id():
         )
 
     with allure.step('Verify response status code is 201'):
-        assert response.status_code == 200, f"Expected status code 201 but got {response.status_code}"
+        assert response.status_code == 201, f"Expected status code 201 but got {response.status_code}"
