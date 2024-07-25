@@ -12,7 +12,6 @@ import test_2_booking_post
 @allure.description('Test to update a booking and verify the response.')
 @allure.severity(allure.severity_level.CRITICAL)
 @pytest.mark.regression
-@pytest.mark.skip
 def test_update_booking():
     body = {
         "firstname": "James",
@@ -82,7 +81,7 @@ def test_update_booking():
 @allure.title('Test Negative Update Booking')
 @allure.description('Test to verify response when updating a booking with an invalid token.')
 @allure.severity(allure.severity_level.CRITICAL)
-def test_negative_update_booking(x):
+def test_negative_update_booking():
     body = {
         "firstname": "James",
         "lastname": "Brown",
